@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ad1c705c3a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="testimonial">
+            <div class="testimonial-text">
+                <div class="user-text active-text">
+                    <i class="fas fa-quote-left"></i>
+                    <p>坤太祖琛总,主要成就建立坤朝,达成荔枝盛世</p><span>悠悠球坤总</span>
+                </div>
+                <div class="user-text">
+                    <i class="fas fa-quote-left"></i>
+                    <p>坤太宗汤姆,琛总退位后将皇位传给了汤姆,在位期间勤政爱民,延续了茘枝盛世,开创全新盛世,"苏珊之治"</p><span>汤姆的混乱空间</span>
+                </div>
+                <div class="user-text">
+                    <i class="fas fa-quote-left"></i>
+                    <p>坤仁宗卓卓，坤朝唯一的女帝，在位期间，政治清明，百姓安康，使坤朝经过武宗常年征伐后国力得到恢复，促成了中兴局面，史称 "油饼中兴"</p><span>卓卓闹婆</span>
+                </div>
+                <div class="user-text">
+                    <i class="fas fa-quote-left"></i>
+                    <p>坤武宗自律，在位期间率领小黑子大军踏平敌国，使坤朝疆域变大</p><span>Yaw自律</span>
+                </div>
+                <div class="user-text">
+                    <i class="fas fa-quote-left"></i>
+                    <p>无名的却又是有名的真ikun，总是以路人的视角带入自己，粉坤坤润物细无声，是ikun里的无名英雄</p><span>纯路人</span>
+                </div>
+            </div>
+            <div class="testimonial-pic">
+                <img src="./images/kunzong.png" class="user-pic active-pic" onclick="showReview()">
+                <img src="./images/tangmu.png" class="user-pic" onclick="showReview()">
+                <img src="./images/zhuozhuo.png" class="user-pic" onclick="showReview()">
+                <img src="./images/yaw.png" class="user-pic" onclick="showReview()">
+                <img src="./images/chunluren.png" class="user-pic" onclick="showReview()">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let userTexts=document.getElementsByClassName("user-text")
+        let userPics=document.getElementsByClassName("user-pic")
+function showReview(){
+    for(userPic of userPics){
+        userPic.classList.remove("active-pic")
+    }
+    for(userText of userTexts){
+        userText.classList.remove("active-text")
+    }
+    let i=Array.from(userPics).indexOf(event.target)
+    userPics[i].classList.add("active-pic")
+    userTexts[i].classList.add("active-text")
+}
+
+
+
+    </script>
+</body>
+
+</html>

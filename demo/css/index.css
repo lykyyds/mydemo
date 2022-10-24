@@ -1,0 +1,162 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;   
+}
+.clearfix::before,.clearfix::after{
+    content: "";
+    display: table;
+}
+.clearfix::after{
+    clear:both;
+}
+
+body {
+background-color:#f3f5f7;
+}
+
+/*版心*/
+.wrapper{
+    width: 1200px;
+    margin: 0 auto;  
+}
+
+.header{
+    height: 80px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+h1{
+    float: left;
+}
+.nav{
+    float: left;
+    margin-left: 70px;
+    height: 80px;
+
+}
+.nav li{
+    float: left;
+    margin-right: 40px;
+
+}
+
+.nav li a{
+    display: block;
+    padding: 0 9px;
+    height: 80px;
+    line-height: 80px;
+   
+    
+    font: 18px;
+    color: #050505;
+}
+
+.nav li a:hover{
+    border-bottom: 2px solid blue;
+
+}
+
+.phone{
+    float: right;
+    margin-right:35px ;
+}
+
+.number{
+    float: right;
+    margin-right:35px ;
+    height: 80px;
+    line-height: 80px;
+}
+
+.banner{
+    height: 420px;
+    background-color: rgb(112, 112, 158);
+}
+
+.banner .wrapper2{
+    width: 750px;
+    height: 420px;
+    margin: 0 auto;
+    background-image: url(../images/kunge.png) ;
+    background-size: cover;
+    
+}
+
+.goods{
+    margin-top: 8px;
+    padding-left: 34px;
+    padding-right: 26px;
+    height: 60px;
+    background-color: #fff;
+    box-shadow: 0px 2px 3px 0px
+    rgba(118,118, 118, 0.2);
+    line-height: 60px;
+}
+
+.goods h2{
+    float: left;
+    font-size: 16px;
+    color:rgb(18, 147, 233);
+    font-weight: 400;
+}
+
+.goods ul{
+    float: left;
+    margin-left: 30px;
+}
+
+.goods ul li{
+    float: left;
+}
+
+.goods li a{
+    border-left: 1px solid #bfbfbf;
+    padding: 0 30px;
+    font-style: 16px;
+    color: #000;
+}
+
+.goods .feedback{
+    float: right;
+    font-style: 14px;
+    color: darkgray;
+}
+
+.box{
+    margin-top: 40px;
+}
+
+.box title{
+    height: 40px;
+    background-color: pink;
+}
+
+.box title h2{
+    float: left;
+    font-style: 20px;
+    color: darkgrey;
+    font-weight: 400;
+}
+
+.content h1{
+    margin-left: 30px;
+}
+
+.content h4{
+    margin: auto;
+    margin-top: 40px;
+    margin-left: 220px;
+
+}
+
+.content h4 p{
+    text-indent:2em
+}
